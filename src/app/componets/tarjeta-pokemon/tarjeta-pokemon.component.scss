@@ -1,0 +1,47 @@
+#container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+
+    &.seleccionado::before {
+        content: "";
+        width: calc(100% + 8px);
+        left: 0px;
+        position: absolute;
+        height: 120%;
+        background-color: #da4443;
+        z-index: -1;
+        border-radius: 5px;
+    }
+}
+
+#flecha {
+    height: 20px;
+    padding: 0 10px;
+    position: absolute;
+
+}
+
+#tarjeta {
+    display: flex;
+    align-items: center;
+    background-color: #fceab8;
+    border-radius: 25px 5px 5px 25px;
+    width: 95%;
+    font-size: large;
+    padding-left: 5px;
+    gap: 1rem;
+    margin-left: 30px;
+}
+
+#circulo {
+    border-radius: 50%;
+    height: 30px;
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+img {
+    max-height: 40px;
+}
